@@ -6,9 +6,9 @@ defmodule PSQ.Mixfile do
       app: :psq,
       version: "0.1.0",
       elixir: "> 1.2.0",
-      description: description,
-      package: package,
-      deps: deps,
+      description: description(),
+      package: package(),
+      deps: deps(),
       dialyzer: [
         flags: ~w(-Wunmatched_returns -Werror_handling -Wrace_conditions -Wno_match),
         plt_file: "#{System.user_home!}/.plt/dialyxir_#{:erlang.system_info(:otp_release)}_#{System.version}.plt"
